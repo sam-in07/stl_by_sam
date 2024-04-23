@@ -1,0 +1,69 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long 
+#define  a(v)  v.begin(), v.end()
+const int N=1e6+10;
+ #define sqr(a) ((a) * (a))
+ void pushhh {
+//Vector এর েশেষ েকােনা উপাদান েযাগ করেত হয় push_back() ফাংশন িদেয়। এিট constant সময় েনয়, অথর্াৎ এর complexity O(1).
+
+    vector<string> v; // v = {};
+v.push_back("Hi"); // v = {"HI"}
+v.push_back("Hello"); // v = {"Hi", "Hello"}
+cout << v[1] << endl; // prints "Hello
+ }
+
+ void popss {
+  //Vector এর েশষ উপাদান pop_back() িদেয় িরমুভ করা যায়। এিটর ও complexity O(1)
+vector<ll> v = {1, 2, 5} ;
+v.pop_back(); // v = {1, 2}
+v.pop_back(); // v = {1}
+
+vector<int> v = {4, 5, 2, 19};
+cout << v.size() << endl; // prints 4
+v.pop_back(); // v = {4, 5, 2};
+cout << v.size() << endl; // prints 3
+ }
+
+ void ins_eras_clear() {
+  vector<int> v = {2, 3, 4, 5};
+v.insert(v.begin(), 1); // v = {1, 2, 3, 4, 5};
+v.insert(v.begin() + 2, 10); // v = {1, 2, 10, 3, 4, 5};
+
+vector<int> v = {1, 2, 3, 5};
+v.erase(v.begin()); // v = {2, 3. 5}
+v.erase(v.begin() + 2); // v = {2, 3}
+
+
+vector<int> v = {1, 2, 3, 5};
+v.clear(); // v = {}
+cout << v.size() << endl; // prints 0
+
+ }
+// dequessssss
+
+int main ()
+ {  
+ 
+  void pushhh ();
+
+ void popss();
+
+void ins_eras_clear();
+//push_front() বয্বহার কের deque এর শুরুেত নতুন element insert করা যায়।
+deque<int> dq;
+dq.push_front(1); // dq = {1}
+dq.push_front(2); // dq = {2, 1}
+dq.push_back(3); // dq = {2, 1, 3}
+cout << dq[0] << " " << dq[1] << " " << dq[2] << "\n"; // 2 1 3
+
+//pop_front() বয্বহার কের deque এর প্রথম element remove করা যায়।
+deque<int> dq;
+dq.push_front(1); // dq = {1}
+dq.push_front(2); // dq = {2, 1}
+dq.pop_front(); // dq = {1}
+dq.push_back(3); // dq = {1, 3}
+dq.pop_back(); // dq = {1}
+return 0;
+
+ }
