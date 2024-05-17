@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+namespace std;
+#define ll long long 
+
+int main () {
+     ll i , n , t , x ;
+    
+        cin >> n ;
+     map<ll,ll>  ma ;
+     for(i=0;i<n;i++) {
+       cin >> x ;
+         ma[i] = x ;
+     }
+     for(auto x: ma)
+      cout << x.first << " " << x.second ;
+      
+}
